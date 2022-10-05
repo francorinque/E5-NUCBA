@@ -1,0 +1,89 @@
+/* reset  */
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --black: #252525;
+    --yellow: #FFA400;
+    --crimson-light: #FC2933;
+    --white: #FFFFFF;
+    --linear-gradient: linear-gradient(to right,#FFA100,#FB103D);
+    --bg-color: #131415;
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--bg-color);
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+/*? terminan estilos generales*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__logo{
+    width: 40px;
+    min-width: 40px;
+    max-width: 60px;
+}
+
+.nav__logo > a{
+    width: 100%;
+    display: block;
+}
+
+.nav__logo > a > img{
+    width: 100%;
+}
+
+.nav__options{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.nav__home{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav__home > span {
+    color: var(--white);
+}
+
+/* ?media query del nav */
+@media (min-width: 768px){
+    .nav__options{
+        gap: 60px;
+    }
+
+    .nav img:hover:not([class="nav__home"] img){
+        cursor: pointer;
+        filter: drop-shadow(0 0 25px var(--white))
+    }
+
+    .nav__options .nav__home:hover{
+        filter: drop-shadow(0 0 25px var(--white));
+    }
+}
