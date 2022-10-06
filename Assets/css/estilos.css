@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=League+Gothic&family=Montserrat:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 /* reset  */
 *,::before,::after{
     margin: 0;
@@ -70,7 +73,7 @@ body{
 
 .nav__home > span {
     color: var(--white);
-}
+} 
 
 /* ?media query del nav */
 @media (min-width: 768px){
@@ -86,4 +89,79 @@ body{
     .nav__options .nav__home:hover{
         filter: drop-shadow(0 0 25px var(--white));
     }
+} 
+
+/* estilos del hero */
+    .about-section {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 70px 50px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.aboout-content {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex: 1 1 50%;
+    gap: 40px;
+    max-width: max(40%, 300px);
+}
+
+.hero-title {
+    position: absolute;
+    width: 600px;
+    height: 93px;
+    left: 133px;
+    top: 178px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 131.02%;
+    color: var(--white);
+}
+
+.hero-title2 { 
+    position: absolute;
+    width: 639px;
+    height: 118px;
+    left: 133px;
+    top: 263px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 131.02%;
+    color: var(--white);
+} 
+
+p {
+    position: absolute;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    line-height: 1px;
+    font-size: 21px;
+    left: 133px;
+    color: var(--white);
+} 
+
+.btn-hero {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--white);
+    width: 166px;
+    height: 50px;
+    left: 133px;
+    top: 415px;
+    border-radius: 15px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
 }
