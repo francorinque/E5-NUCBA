@@ -102,6 +102,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 auto;
     gap: 20px;
     width: 95%;
     flex: 1 1 50%;
