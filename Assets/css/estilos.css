@@ -7,6 +7,11 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'Montserrat',sans-serif;
+} 
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -93,31 +98,40 @@ body{
 
 /* estilos del hero */
     .about-section {
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 70px 50px;
     margin: 0 auto;
+    gap: 20px;
+    width: 95%;
+    flex: 1 1 50%;
+    padding: 70px 50px;
     max-width: 1300px;
 }
+
 .aboout-content {
     display: flex;
-    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     flex-direction: column;
     flex: 1 1 50%;
     gap: 40px;
-    max-width: max(40%, 300px);
+    padding: 70px 50px;
+    max-width: max(40%, 300px)
 }
 
 .hero-title {
-    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
     width: 600px;
     height: 93px;
-    left: 133px;
-    top: 178px;
+    /* left: 133px;
+    top: 178px; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 66px;
@@ -126,11 +140,13 @@ body{
 }
 
 .hero-title2 { 
-    position: absolute;
+    display: flex;
+    text-align: center;
     width: 639px;
     height: 118px;
-    left: 133px;
-    top: 263px;
+    flex: 1 1 50%;
+    /* left: 133px;
+    top: 263px; */
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -140,28 +156,70 @@ body{
 } 
 
 p {
-    position: absolute;
+    display: flex; 
+    align-items: center;
+    text-align: center;
     font-family: 'Montserrat',sans-serif;
     font-weight: 400;
     line-height: 1px;
     font-size: 21px;
-    left: 133px;
     color: var(--white);
 } 
 
 .btn-hero {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
     font-family: 'Montserrat',sans-serif;
     font-weight: 700;
     font-size: 14px;
     color: var(--white);
     width: 166px;
     height: 50px;
-    left: 133px;
-    top: 415px;
+    /* left: 133px;
+    top: 415px; */
     border-radius: 15px;
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+}   
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 250px;
+    width: 30%;
+    height: 350px;
+
+}
+
+.title-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 40px 0; 
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 50%;
+    }
+    .aboout-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
