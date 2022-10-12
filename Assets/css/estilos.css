@@ -19,7 +19,7 @@ html {
     --yellow: #FFA400;
     --crimson-light: #FC2933;
     --white: #FFFFFF;
-    --grey: #4d4d4d;
+    --grey: #c3c3c39c;
     --linear-gradient: linear-gradient(to right,#FFA100,#FB103D);
     --bg-color: #131415;
 }
@@ -225,7 +225,7 @@ p {
     }
 }
 
- /* Arranco section 'Hoy te recomendamos' */
+ /** Arranco section 'Hoy te recomendamos' */
 .section{
     display: flex;
     flex-direction:column;
@@ -305,9 +305,9 @@ p {
     width: 100px;
     height: 35px;
 }
- /* Termino section 'Hoy te recomendamos' */
+ /** Termino section 'Hoy te recomendamos' */
 
- /* Arranco section 'Categorias' */
+ /** Arranco section 'Categorias' */
 .categorias{
     font-weight: 800;
     font-size: 17px;
@@ -328,6 +328,8 @@ p {
 .iconos{
     padding-bottom: 15px;
     padding-top: 15px;
+    filter: drop-shadow(0 0 15px var(--grey))
+
 }
 .mini-cards > span{
     height: 4px;
@@ -337,14 +339,14 @@ p {
     border-radius: 15px;
     margin: 20px;
 }
- /*Termino section 'Categorias' */
+ /**Termino section 'Categorias' */
 
- /*Arranco section 'Las más populares' */
+ /**Arranco section 'Las más populares' */
 .populares{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 220px;
+    height: 240px;
     width: 280px;
 }
 .container__price__button{
@@ -357,9 +359,9 @@ p {
     text-align: left;
     width: 80%;
 }
- /*Termino section 'Las más populares' */
+ /**Termino section 'Las más populares' */
 
-  /*Arranco el querido footer */
+  /**Arranco el querido footer */
 .footer{
     display: flex;
     flex-direction: column;
@@ -369,10 +371,35 @@ p {
     margin-top: 80px;
 }
 .text__footer{
-    margin-right: 15px;
     font-size: 14px;
 }
 .weight-font > span{
     font-weight: 900;
-    margin-left: 5px;
+    margin-left: 3px;
+}
+  /**Terminado el querido footer */
+ /*? Media queries para las sections 'Hoy te recomendamos', 'Categorias' y 'Los más populares' */
+@media (max-width: 768px){
+    .section , .section__container{
+        max-width: 340px;
+        margin: 0 auto;
+    }
+    .text__footer{
+        font-size: 10px;
+        height: 10px;
+    }
+    .cards{
+        height: 110px;
+        width: 330px;
+        gap: 0;
+    }
+    .container__text{
+        margin-left: 7px;
+    }
+
+    .populares{
+        height: 220px;
+        max-width: 280px;
+        gap: 10px;
+    }
 }
