@@ -19,6 +19,7 @@ html {
     --yellow: #FFA400;
     --crimson-light: #FC2933;
     --white: #FFFFFF;
+    --grey: #4d4d4d;
     --linear-gradient: linear-gradient(to right,#FFA100,#FB103D);
     --bg-color: #131415;
 }
@@ -222,4 +223,156 @@ p {
         align-items: center;
         text-align: center;
     }
+}
+
+ /* Arranco section 'Hoy te recomendamos' */
+.section{
+    display: flex;
+    flex-direction:column;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.section__subtitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--white);
+    padding: 25px 0px;
+}
+.subtitulo{
+    font-weight: 500;
+    font-size: 22px;
+}
+.section__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    background: var(--black);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    gap: 20px;
+    height: 100px;
+    width: 365px;
+}
+.container__text{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+    justify-content:center;
+    gap: 15px;
+}
+.tittle__pizza{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--white);
+}
+.subtitulo__pizza{
+    font-size: 14px;
+    font-weight: 500;
+    color:var(--grey);
+}
+.price__pizza{
+    font-weight: 700;
+    font-size: 19px;
+    height: 22px;
+    width: 150px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.button__pizza{
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    border-radius: 17.5px;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 13.5px;
+}
+.button{
+    cursor: pointer;
+    width: 100px;
+    height: 35px;
+}
+ /* Termino section 'Hoy te recomendamos' */
+
+ /* Arranco section 'Categorias' */
+.categorias{
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.mini-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+    width: 150px;
+    background: var(--black);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    margin: 0 auto;
+}
+.iconos{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.mini-cards > span{
+    height: 4px;
+    width: 50px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;
+    margin: 20px;
+}
+ /*Termino section 'Categorias' */
+
+ /*Arranco section 'Las más populares' */
+.populares{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 280px;
+}
+.container__price__button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.left{
+    text-align: left;
+    width: 80%;
+}
+ /*Termino section 'Las más populares' */
+
+  /*Arranco el querido footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130px;
+    margin-top: 80px;
+}
+.text__footer{
+    margin-right: 15px;
+    font-size: 14px;
+}
+.weight-font > span{
+    font-weight: 900;
+    margin-left: 5px;
 }
